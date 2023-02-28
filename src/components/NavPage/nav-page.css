@@ -1,0 +1,28 @@
+footer p {
+  color: #aace0a;;
+}
+
+.btn-page {
+  background-color: #aace0a !important;
+}
+
+.btn-page:hover {
+  color: black !important;
+}
+
+.invisible-btn {
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: transparent;
+  cursor: initial !important;
+  
+}
+
+.invisible-btn:hover {
+  color: transparent !important;
+}
+
+.invisible-btn:active {
+  color: transparent !important;
+}
+

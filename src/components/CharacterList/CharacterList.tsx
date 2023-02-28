@@ -13,14 +13,13 @@ function CharacterList() {
   useEffect(() => {
     async function fetchData() {
       const { data }: CharacterApi = await api(`character?page=${page}`);
-      console.log(data);
       setCharacters(data.results);
       setLoading(false);
     }
-
+    
     fetchData();
   }, [page]);
-
+  
   return (
     <div className="container">
       {loading ? (
@@ -36,7 +35,7 @@ function CharacterList() {
               );
             })}
           </div>
-          <NavPage page={page} setPage={setPage}/>
+          <NavPage page={page} setPage={setPage} />
         </>
       )}
     </div>

@@ -10,8 +10,8 @@ type CharacterApiData = {
 type CharacterApiInfo = {
   count: number;
   pages: number;
-  next: string;
-  prev?: string;
+  next: string | null;
+  prev: string | null;
 };
 
 type CharacterApiResult = {
@@ -34,4 +34,4 @@ type CharacterApiResultGeoraphy = {
   url: string;
 };
 
-export type { CharacterApi, CharacterApiResult };
+export type { CharacterApi, CharacterApiResult, CharacterApiInfo };

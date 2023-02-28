@@ -5,8 +5,9 @@ type CharacterListProps = {
 };
 
 type PageProps = {
-  page: number
-  setPage: any
+  page: number;
+  setPage: any;
+  prevOrNext?: "prev" | "next";
 };
 
 export type { CharacterListProps, PageProps };
