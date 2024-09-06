@@ -14,7 +14,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd r&m-web
+  cd rickAndMorty-web
 ```
 
 Install dependencies
