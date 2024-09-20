@@ -1,23 +1,8 @@
-.character-card__info {
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-.character-card__info p {
-  margin-bottom: 8px;
-}
-
-.character-card__title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
 .character-card__title span {
   font-size: small;
 }
 
 .character-card__name {
-  width: fit-content;
-  margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

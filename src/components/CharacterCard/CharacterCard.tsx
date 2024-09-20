@@ -1,15 +1,15 @@
-import { CharacterListProps } from "../../models/props.model";
+import { CharacterListProps } from '../../types/props';
 import { CharacterCardImg } from "../CharacterCardImg/CharacterCardImg";
 import { CharacterCardInfo } from "../CharacterCardInfo/CharacterCardInfo";
 
-import "./character-card.css"
+import "./character-card.css";
 
-function CharacterCard({character}: CharacterListProps) {
+function CharacterCard ({ character }: CharacterListProps) {
   return (
     <div className="card mb-3 text-light card-container">
       <div className="row g-0">
         <CharacterCardImg character={character} />
-        <CharacterCardInfo character={character}/>
+        <CharacterCardInfo character={character} />
       </div>
     </div>
   );

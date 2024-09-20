@@ -1,11 +1,9 @@
-import { PageProps } from "../../models/props.model";
-import { toPage } from "../../service/navPage.service";
-import {GrNext, GrPrevious} from "../../../node_modules/react-icons/gr"
-
-
 import "./nav-page.css";
+import { PageProps } from "../../types/props";
+import { toPage } from "../../service/navPage.service";
+import { GrNext, GrPrevious } from "../../../node_modules/react-icons/gr";
 
-function NavPage({ page, setPage }: PageProps) {
+function NavPage ({ page, pages = 0, setPage }: PageProps) {
   return (
     <>
       <footer className="d-flex align-items-center justify-content-between">
@@ -19,11 +17,11 @@ function NavPage({ page, setPage }: PageProps) {
               }}
               className={page > 1 ? "btn btn-page btn-sm my-3" : "d-none"}
             >
-              <GrPrevious/> Page {page - 1}
+              <GrPrevious /> Page {page - 1}
             </button>
           )}
-          <p className="fw-bolder">{page}</p>
-          {page >= 42 ? (
+          <p className="fw-bolder mb-0">{page}</p>
+          {page >= pages ? (
             <button className="btn btn-sm my-3 invisible-btn">{`Page 0 -->`}</button>
           ) : (
             <button
@@ -31,7 +29,7 @@ function NavPage({ page, setPage }: PageProps) {
                 toPage({ page, setPage, prevOrNext: "next" });
               }}
               className="btn btn-page btn-sm my-3"
-            >Page {page + 1} <GrNext/></button>
+            >Page {page + 1} <GrNext /></button>
           )}
         </>
       </footer>

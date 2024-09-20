@@ -1,5 +1,6 @@
 footer p {
-  color: #aace0a;;
+  color: #aace0a;
+  ;
 }
 
 .btn-page {
@@ -15,7 +16,7 @@ footer p {
   border: 0px solid transparent;
   color: transparent;
   cursor: initial !important;
-  
+
 }
 
 .invisible-btn:hover {
@@ -25,4 +26,3 @@ footer p {
 .invisible-btn:active {
   color: transparent !important;
 }
-

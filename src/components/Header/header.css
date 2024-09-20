@@ -1,13 +1,33 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 
-
-.app__header {
+.header {
   background-color: #F3EFE0;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 0.5rem 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.main-title {
+.header__title {
   color: #aace0a;
-  font-family: 'Mynerve', cursive;;
+  font-family: 'Mynerve', cursive;
+  cursor: pointer;
+}
+
+.header__list {
+  color: #aace0a;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #aace0a;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.5s ease;
+  border-radius: 0.25rem;
+}
+
+.header__link:hover {
+  color: #F3EFE0;
+  background-color: #aace0a;
 }

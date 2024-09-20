@@ -1,7 +1,8 @@
-import { CharacterListProps } from "../../models/props.model";
-import "./character-card-img.css"
+import { CharacterListProps } from '../../types/props';
+import "./character-card-img.css";
 
-function CharacterCardImg({character}: CharacterListProps) {
+
+function CharacterCardImg ({ character }: CharacterListProps) {
   return (
     <div className="col-md-4">
       <img
