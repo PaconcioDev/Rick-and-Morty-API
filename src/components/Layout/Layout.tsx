@@ -1,3 +1,4 @@
+import "./Layout.css"
 import { LayoutProps } from '../../types/props';
 import { NavPage } from '../NavPage/NavPage';
 
@@ -9,7 +10,7 @@ function Layout ({
   children
 }: LayoutProps) {
   return (
-    <div className='container'>
+    <div className='layout container'>
       {
         loading
           ?
@@ -18,11 +19,11 @@ function Layout ({
           )
           :
           (
-            <div className='d-flex flex-column justify-content-between'>
+            <div className='d-flex flex-column justify-content-between h-100'>
               <div className='row'>
                 {children}
-                <NavPage page={page} pages={pages} setPage={setPage} />
               </div>
+              <NavPage page={page} pages={pages} setPage={setPage} />
             </div>
           )
       }
